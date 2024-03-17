@@ -29,7 +29,7 @@ export default {
         async addContact() {
             try {
                 await ContactService.create(this.contact);
-                this.message = 'Liên hệ được thêm thành công.';
+                alert("Liên hệ được thêm thành công");
                 this.$router.push({ name: 'contactbook' });
             } catch (err) {
                 console.log(err);
